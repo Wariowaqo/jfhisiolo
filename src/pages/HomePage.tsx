@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { HandHeart, Donate, User } from 'lucide-react';
+import { HandHeart, Wallet, User } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import useFadeIn from '../hooks/useFadeIn';
@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
             </div>
             
             <div className="involvement-option fade-in">
-              <Donate size={48} className="involvement-icon" />
+              <Wallet size={48} className="involvement-icon" />
               <h3>Donate</h3>
               <p>Support our mission with a contribution that helps fund our outreach programs.</p>
               <Link to="/contact" className="btn btn-small">Donate Now</Link>
