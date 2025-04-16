@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 43% 99%;
+    --foreground: 120 14% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 14% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 14% 10%;
+
+    --primary: 122 39% 43%;
+    --primary-foreground: 120 4% 98%;
+
+    --secondary: 120 6% 93%;
+    --secondary-foreground: 120 8% 9%;
+
+    --muted: 120 6% 93%;
+    --muted-foreground: 120 4% 46%;
+
+    --accent: 120 6% 93%;
+    --accent-foreground: 120 8% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 120 4% 98%;
+
+    --border: 120 6% 90%;
+    --input: 120 6% 90%;
+    --ring: 122 39% 43%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 120 14% 10%;
+    --foreground: 120 4% 98%;
+
+    --card: 120 14% 10%;
+    --card-foreground: 120 4% 98%;
+
+    --popover: 120 14% 10%;
+    --popover-foreground: 120 4% 98%;
+
+    --primary: 122 39% 43%;
+    --primary-foreground: 120 14% 10%;
+
+    --secondary: 120 4% 18%;
+    --secondary-foreground: 120 4% 98%;
+
+    --muted: 120 4% 18%;
+    --muted-foreground: 120 4% 65%;
+
+    --accent: 120 4% 18%;
+    --accent-foreground: 120 4% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 120 4% 98%;
+
+    --border: 120 4% 18%;
+    --input: 120 4% 18%;
+    --ring: 122 39% 43%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4c8e4c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b723b;
+}
