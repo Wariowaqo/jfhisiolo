@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HandHeart, Wallet, User } from 'lucide-react';
@@ -60,23 +59,23 @@ const HomePage: React.FC = () => {
         <div className="container">
           <h2 className="fade-in">Our Impact</h2>
           <div className="impact-cards">
-            <div className="impact-card fade-in">
+            <Link to="/about" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
               <h3>Sarah's Story</h3>
               <p>"Journey for Hope changed my perspective on community support. The walks not only improved my physical health but connected me with incredible people."</p>
-            </div>
+            </Link>
             
-            <div className="impact-card fade-in">
+            <Link to="/about" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
               <h3>Community Outreach</h3>
               <p>"Our neighborhood has transformed since the program began. We've seen increased engagement and healthier lifestyles across all age groups."</p>
-            </div>
+            </Link>
             
-            <div className="impact-card fade-in">
+            <Link to="/about" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
               <h3>Building Bridges</h3>
               <p>"The initiative has created meaningful connections between different communities that otherwise might never have interacted."</p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

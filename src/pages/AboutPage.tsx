@@ -1,12 +1,9 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import useFadeIn from '../hooks/useFadeIn';
 
-// About page component
 const AboutPage: React.FC = () => {
-  // Initialize fade-in animations
   useFadeIn();
   
   return (
@@ -46,6 +43,35 @@ const AboutPage: React.FC = () => {
                 <li><strong>Education:</strong> We provide resources to help people make informed health decisions.</li>
                 <li><strong>Support:</strong> We create networks that sustain long-term positive change.</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Our People Section */}
+      <section className="our-people-section bg-secondary/20">
+        <div className="container">
+          <h2 className="fade-in">Our People</h2>
+          <div className="people-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div className="team-member fade-in bg-white p-6 rounded-lg shadow-md">
+              <div className="member-image w-32 h-32 mx-auto rounded-full bg-gray-200 mb-4"></div>
+              <h3>Jane Smith</h3>
+              <p className="text-primary font-medium">Executive Director</p>
+              <p className="mt-2 text-gray-600">Leading our mission with 15 years of community service experience.</p>
+            </div>
+            
+            <div className="team-member fade-in bg-white p-6 rounded-lg shadow-md">
+              <div className="member-image w-32 h-32 mx-auto rounded-full bg-gray-200 mb-4"></div>
+              <h3>Michael Johnson</h3>
+              <p className="text-primary font-medium">Program Coordinator</p>
+              <p className="mt-2 text-gray-600">Organizing impactful community events and health awareness programs.</p>
+            </div>
+            
+            <div className="team-member fade-in bg-white p-6 rounded-lg shadow-md">
+              <div className="member-image w-32 h-32 mx-auto rounded-full bg-gray-200 mb-4"></div>
+              <h3>Sarah Williams</h3>
+              <p className="text-primary font-medium">Community Liaison</p>
+              <p className="mt-2 text-gray-600">Building bridges between communities and healthcare providers.</p>
             </div>
           </div>
         </div>

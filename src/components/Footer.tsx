@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 
-// Footer component for all pages
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
@@ -13,6 +12,24 @@ const Footer: React.FC = () => {
           <div className="footer-logo">
             <Link to="/">Journey for Hope</Link>
             <p>Empowering Lives, Inspiring Change</p>
+            
+            <div className="social-icons">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <Facebook className="hover:text-primary transition-colors" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <Twitter className="hover:text-primary transition-colors" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram className="hover:text-primary transition-colors" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="hover:text-primary transition-colors" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <Youtube className="hover:text-primary transition-colors" />
+              </a>
+            </div>
           </div>
           
           <div className="footer-links">
