@@ -4,6 +4,7 @@ import { HandHeart, Wallet, User } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import useFadeIn from '../hooks/useFadeIn';
+import { Button } from '@/components/ui/button';
 
 // Home page component
 const HomePage: React.FC = () => {
@@ -37,7 +38,7 @@ const HomePage: React.FC = () => {
           <p className="hero-subtitle">Promoting health and unity through awareness walks and outreach.</p>
           <div className="hero-buttons">
             <Link to="/contact" className="btn btn-primary">Volunteer</Link>
-            <a href="#impact" className="btn btn-secondary">Read Success Projects</a>
+            <Link to="/projects" className="btn btn-secondary">Read Success Projects</Link>
           </div>
         </div>
       </section>
@@ -89,21 +90,27 @@ const HomePage: React.FC = () => {
               <HandHeart size={48} className="involvement-icon" />
               <h3>Participate</h3>
               <p>Join our walks and events to show your support and be part of our growing community.</p>
-              <Link to="/contact" className="btn btn-small">Learn More</Link>
+              <Link to="/contact">
+                <Button variant="secondary" className="mt-4">Learn More</Button>
+              </Link>
             </div>
             
             <div className="involvement-option fade-in">
               <Wallet size={48} className="involvement-icon" />
               <h3>Donate</h3>
               <p>Support our mission with a contribution that helps fund our outreach programs.</p>
-              <Link to="/contact" className="btn btn-small">Donate Now</Link>
+              <Link to="/contact">
+                <Button variant="secondary" className="mt-4">Donate Now</Button>
+              </Link>
             </div>
             
             <div className="involvement-option fade-in">
               <User size={48} className="involvement-icon" />
               <h3>Volunteer</h3>
               <p>Share your time and skills to help organize and manage our community events.</p>
-              <Link to="/contact" className="btn btn-small">Sign Up</Link>
+              <Link to="/contact">
+                <Button variant="secondary" className="mt-4">Sign Up</Button>
+              </Link>
             </div>
           </div>
         </div>

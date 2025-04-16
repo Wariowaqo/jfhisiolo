@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -154,14 +153,6 @@ const ContactPage: React.FC = () => {
                 <p>Email: journeyforhopewalk@gmail.com</p>
                 <p>Phone: (555) 123-4567</p>
                 <p>Office Hours: Monday-Friday, 9am-5pm</p>
-              </div>
-              
-              <div className="map-container">
-                {/* Google Maps Placeholder - In a real app, you would use Google Maps API */}
-                <div className="google-map-placeholder">
-                  <img src="/placeholder.svg" alt="Map location" />
-                  <p>Map Loading...</p>
-                </div>
               </div>
             </div>
           </div>
