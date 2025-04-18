@@ -280,7 +280,7 @@ section {
 .hero-title {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: black;
+  color: dark rgb(2, 68, 2);
 }
 
 .hero-subtitle {
