@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
       <section 
         className="hero-section h-screen relative flex items-center justify-center"
         style={{
-          backgroundImage: `url('/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png')`,
+          backgroundImage: `url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
             
             <Link to="/projects" className="impact-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
               <img 
-                src="/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png" 
+                src="/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png" 
                 alt="Anti-FGM Dinner" 
                 className="w-full h-48 object-cover"
               />
