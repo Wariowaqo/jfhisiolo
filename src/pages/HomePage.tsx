@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HandHeart, Wallet, User } from 'lucide-react';
@@ -35,7 +36,7 @@ const HomePage: React.FC = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">Empowering Lives, Inspiring Change</h1>
-          <p className="hero-subtitle">Promoting health and unity through awareness walks and outreach.</p>
+          <p className="hero-subtitle">Promoting health and unity through awareness walks and outreach in Isiolo.</p>
           <div className="hero-buttons">
             <Link to="/contact" className="btn btn-primary">Volunteer</Link>
             <Link to="/projects" className="btn btn-secondary">Read Success Projects</Link>
@@ -46,9 +47,9 @@ const HomePage: React.FC = () => {
       {/* About Brief Section */}
       <section className="about-brief fade-in">
         <div className="container">
-          <h2>About Journey for Hope</h2>
+          <h2>About Journey for Hope Isiolo</h2>
           <p>
-            Journey for Hope is a community-driven initiative that brings people together 
+            Journey for Hope Isiolo is a community-driven initiative that brings people together 
             through organized walks and health awareness programs. We believe in the power 
             of community support to create positive change and promote well-being for all.
           </p>
@@ -62,20 +63,20 @@ const HomePage: React.FC = () => {
           <div className="impact-cards">
             <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
-              <h3>Sarah's Story</h3>
-              <p>"Journey for Hope changed my perspective on community support. The walks not only improved my physical health but connected me with incredible people."</p>
+              <h3>Digital Inclusion at Isiolo School for the Deaf</h3>
+              <p>Journey for Hope, in partnership with NIDO, empowered deaf learners and trained teachers at Isiolo School for the Deaf on digital skills, creating a more inclusive learning environment.</p>
             </Link>
             
             <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
-              <h3>Community Outreach</h3>
-              <p>"Our neighborhood has transformed since the program began. We've seen increased engagement and healthier lifestyles across all age groups."</p>
+              <h3>Supporting Girls' Education</h3>
+              <p>Funds raised from our community walk enabled us to donate sanitary pads to the Isiolo Deaf School, promoting menstrual hygiene and reducing school absenteeism among girls, empowering young women and fostering a future free from FGM.</p>
             </Link>
             
             <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
-              <h3>Building Bridges</h3>
-              <p>"The initiative has created meaningful connections between different communities that otherwise might never have interacted."</p>
+              <h3>Anti-FGM Dinner</h3>
+              <p>We hosted an Anti-FGM Dinner that brought together organizations, stakeholders and community leaders to discuss and commit to ending FGM in our county and beyond, sharing ideas and strengthening partnerships.</p>
             </Link>
           </div>
         </div>

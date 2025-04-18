@@ -34,10 +34,10 @@ const Navigation: React.FC = () => {
           <Link to="/" className="flex items-center gap-2">
             <img 
               src="/lovable-uploads/23c6f6fd-e7f1-4ab2-b709-481155f77d62.png" 
-              alt="Journey for Hope Logo" 
+              alt="Journey for Hope Isiolo Logo" 
               className="h-12 w-auto"
             />
-            <span className="text-2xl font-bold text-primary hidden md:inline">Journey for Hope</span>
+            <span className="text-2xl font-bold text-primary hidden md:inline">Journey for Hope Isiolo</span>
           </Link>
           
           <button 

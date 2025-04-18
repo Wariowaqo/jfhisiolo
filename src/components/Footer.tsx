@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
@@ -10,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <Link to="/">Journey for Hope</Link>
+            <Link to="/">Journey for Hope Isiolo</Link>
             <p>Empowering Lives, Inspiring Change</p>
             
             <div className="social-icons">
@@ -38,6 +39,7 @@ const Footer: React.FC = () => {
               <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
@@ -51,7 +53,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Journey for Hope. All rights reserved.</p>
+          <p>&copy; {currentYear} Journey for Hope Isiolo. All rights reserved.</p>
         </div>
       </div>
     </footer>
