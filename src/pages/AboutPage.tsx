@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -18,28 +17,28 @@ const AboutPage: React.FC = () => {
   
   const teamMembers = [
     {
-      name: "Tadicha Roba",
+      name: "Guyo Fugicha",
       role: "Founder",
+      image: "/lovable-uploads/d57dbb59-2382-471d-923d-802683a6d1d7.png",
+      statement: "At Journey for Hope (JFH), we prioritize health and well-being by promoting physical activity through community walks and raising awareness on important health issues. Founded with a vision to empower marginalized communities, especially youth and people with disabilities, we also provide access to education, digital skills and economic opportunities. Our mission is to create an inclusive, informed and healthier society where everyone has the chance to thrive."
+    },
+    {
+      name: "Tadicha Roba",
+      role: "Co-Founder",
       image: "/lovable-uploads/efe2658c-fdf1-40ff-a0e6-5dc6d9de87b0.png",
       statement: "With a passion for creating lasting social change, this co-founder brings a wealth of experience in grassroots development and community engagement. Their focus is on creating innovative solutions that address the unique challenges faced by marginalized groups, particularly in education and health. Through their leadership, Journey for Hope has been able to reach diverse communities, providing them with the resources and support needed to overcome barriers and lead healthier, more empowered lives."
     },
     {
-      name: "Guyo Fugicha",
-      role: "Co-Founder",
-      image: "/lovable-uploads/d57dbb59-2382-471d-923d-802683a6d1d7.png",
-      statement: "At Journey for Hope (JFH), we prioritize health and well-being by promoting physical activity through community walks and raising awareness on important health issues. Founded with a vision to empower marginalized communities, especially youth and people with disabilities, we also provide access to education, digital skills and economic opportunities. Our mission is to create an inclusive, informed and healthier society where everyone has the chance to thrive."
+      name: "Kristine Miano",
+      role: "Marketing Director",
+      image: "/lovable-uploads/b70446b6-dc20-4680-b8d9-f9c9aa9514b3.png",
+      statement: "At Journey for Hope (JFH), we believe every step tells a story — of healing, strength and transformation. As the Marketing Director, I'm proud to champion a movement that turns simple walks into powerful platforms for change. JFH brings people together through health walks, awareness campaigns, and community-driven projects that uplift youth, women, and underserved groups. Our work is rooted in purpose, powered by people and guided by Hope."
     },
     {
       name: "Shamsa Shurie",
       role: "Project Coordinator",
       image: "/lovable-uploads/1a670e6b-bb2c-449e-970f-978176a20181.png",
       statement: "Journey for Hope (JFH) is a community-driven initiative promoting health, awareness and sustainable development. As Project Coordinator, I oversee programs that empower youth, support climate action, and inspire positive change through local engagement."
-    },
-    {
-      name: "Kristine Miano",
-      role: "Co-Founder",
-      image: "/lovable-uploads/b70446b6-dc20-4680-b8d9-f9c9aa9514b3.png",
-      statement: "At Journey for Hope (JFH), we believe every step tells a story — of healing, strength and transformation. As the Marketing Director, I'm proud to champion a movement that turns simple walks into powerful platforms for change. JFH brings people together through health walks, awareness campaigns, and community-driven projects that uplift youth, women, and underserved groups. Our work is rooted in purpose, powered by people and guided by Hope."
     },
     {
       name: "Abduba Galgalo",
@@ -60,14 +59,9 @@ const AboutPage: React.FC = () => {
           <div className="about-content grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div className="about-image space-y-4 fade-in">
               <img 
-                src="/lovable-uploads/ff8111eb-1040-41c6-87e8-4fd7080a3b98.png"
-                alt="Community walk participants" 
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
-              />
-              <img 
                 src="/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png"
                 alt="Journey for Hope activities" 
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
+                className="w-full h-[600px] object-cover rounded-lg shadow-lg"
               />
             </div>
             

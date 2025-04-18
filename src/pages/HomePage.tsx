@@ -7,14 +7,10 @@ import Footer from '../components/Footer';
 import useFadeIn from '../hooks/useFadeIn';
 import { Button } from '@/components/ui/button';
 
-// Home page component
 const HomePage: React.FC = () => {
-  // Initialize fade-in animations
   useFadeIn();
   
-  // Smooth scroll implementation
   useEffect(() => {
-    // Add smooth scrolling to all internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -32,14 +28,20 @@ const HomePage: React.FC = () => {
     <div className="page-container">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">Empowering Lives, Inspiring Change</h1>
-          <p className="hero-subtitle">Promoting health and unity through awareness walks and outreach in Isiolo.</p>
-          <div className="hero-buttons">
-            <Link to="/contact" className="btn btn-primary">Volunteer</Link>
-            <Link to="/projects" className="btn btn-secondary">Read Success Projects</Link>
+      <section 
+        className="hero-section h-screen relative flex items-center justify-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/e64da2b2-0300-41b0-8cc4-fb7f921da4bf.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="hero-content text-center text-white z-10">
+          <h1 className="hero-title text-5xl font-bold mb-4">Empowering Lives, Inspiring Change</h1>
+          <p className="hero-subtitle text-xl mb-8">Promoting health and unity through awareness walks and outreach in Isiolo.</p>
+          <div className="hero-buttons space-x-4">
+            <Link to="/contact" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90">Volunteer</Link>
+            <Link to="/projects" className="inline-block px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90">Read Success Projects</Link>
           </div>
         </div>
       </section>
@@ -57,26 +59,44 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* Impact Section */}
-      <section id="impact" className="impact-section">
-        <div className="container">
-          <h2 className="fade-in">Our Impact</h2>
-          <div className="impact-cards">
-            <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
-              <div className="card-image"></div>
-              <h3>Digital Inclusion at Isiolo School for the Deaf</h3>
-              <p>Journey for Hope, in partnership with NIDO, empowered deaf learners and trained teachers at Isiolo School for the Deaf on digital skills, creating a more inclusive learning environment.</p>
+      <section id="impact" className="impact-section py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 fade-in">Our Impact</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link to="/projects" className="impact-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+              <img 
+                src="/lovable-uploads/a40176e2-64a1-44e2-b799-c2243442db58.png" 
+                alt="Digital Inclusion Project" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3">Digital Inclusion at Isiolo School for the Deaf</h3>
+                <p className="text-gray-600">Empowering deaf learners and training teachers on digital skills, creating an inclusive learning environment.</p>
+              </div>
             </Link>
             
-            <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
-              <div className="card-image"></div>
-              <h3>Supporting Girls' Education</h3>
-              <p>Funds raised from our community walk enabled us to donate sanitary pads to the Isiolo Deaf School, promoting menstrual hygiene and reducing school absenteeism among girls, empowering young women and fostering a future free from FGM.</p>
+            <Link to="/projects" className="impact-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+              <img 
+                src="/lovable-uploads/caf7e5c0-2263-4e41-b608-78fb04e2d690.png" 
+                alt="Supporting Girls' Education" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3">Supporting Girls' Education</h3>
+                <p className="text-gray-600">Providing sanitary supplies and promoting menstrual hygiene to reduce school absenteeism among girls.</p>
+              </div>
             </Link>
             
-            <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
-              <div className="card-image"></div>
-              <h3>Anti-FGM Dinner</h3>
-              <p>We hosted an Anti-FGM Dinner that brought together organizations, stakeholders and community leaders to discuss and commit to ending FGM in our county and beyond, sharing ideas and strengthening partnerships.</p>
+            <Link to="/projects" className="impact-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+              <img 
+                src="/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png" 
+                alt="Anti-FGM Dinner" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3">Anti-FGM Dinner</h3>
+                <p className="text-gray-600">Bringing together stakeholders and community leaders to commit to ending FGM in our county.</p>
+              </div>
             </Link>
           </div>
         </div>

@@ -22,18 +22,11 @@ const ProjectsPage: React.FC = () => {
                 <CardDescription>February 6, 2025 - International Day of Zero Tolerance for FGM</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <img 
-                    src="/lovable-uploads/4596201c-fc91-4a47-ad7f-037ddf9a7f49.png" 
-                    alt="Sanitary pads donation" 
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                  <img 
-                    src="/lovable-uploads/207fe7ae-82cc-4380-86bd-8d12f250332a.png" 
-                    alt="Community walk participants" 
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                </div>
+                <img 
+                  src="/lovable-uploads/caf7e5c0-2263-4e41-b608-78fb04e2d690.png" 
+                  alt="Sanitary pads donation" 
+                  className="w-full h-80 object-cover rounded-lg"
+                />
                 <div className="space-y-4">
                   <p className="text-lg">
                     On February 6, 2025, during the International Day of Zero Tolerance for Female Genital Mutilation (FGM), 
@@ -65,18 +58,11 @@ const ProjectsPage: React.FC = () => {
                 <CardDescription>March 2025 - Building Partnerships to End FGM</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <img 
-                    src="/lovable-uploads/c6df90b1-d1d4-453d-a8dd-effc0615a991.png" 
-                    alt="Community exercises during walk" 
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                  <img 
-                    src="/lovable-uploads/ed18f212-3df2-4407-8e12-e678fb4c6ad4.png" 
-                    alt="Participants stretching" 
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                </div>
+                <img 
+                  src="/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png" 
+                  alt="Community event" 
+                  className="w-full h-80 object-cover rounded-lg"
+                />
                 <div className="space-y-4">
                   <p className="text-lg">
                     We hosted an Anti-FGM Dinner that brought together organizations, stakeholders and community leaders 
@@ -108,18 +94,11 @@ const ProjectsPage: React.FC = () => {
                 <CardDescription>April 2025 - Technology Access Initiative</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <img 
-                    src="/lovable-uploads/a362addb-dc1d-468d-9e1f-fdf2e5af196f.png" 
-                    alt="Digital skills training session" 
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                  <img 
-                    src="/lovable-uploads/2f89871e-d5c1-46a8-b008-d4ab713743af.png" 
-                    alt="Teacher training session" 
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
-                </div>
+                <img 
+                  src="/lovable-uploads/a40176e2-64a1-44e2-b799-c2243442db58.png" 
+                  alt="Digital skills training session" 
+                  className="w-full h-80 object-cover rounded-lg"
+                />
                 <div className="space-y-4">
                   <p className="text-lg">
                     Journey for Hope, in partnership with NIDO, empowered deaf learners and trained teachers at Isiolo School 
