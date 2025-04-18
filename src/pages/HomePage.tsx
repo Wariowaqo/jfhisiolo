@@ -29,9 +29,9 @@ const HomePage: React.FC = () => {
       <Navigation />
       
       <section
-  className="relative h-screen flex items-center justify-center pt-20"
+  className="relative min-h-[500px] pt-20 flex items-center justify-center"
   style={{
-    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.1)), url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
+    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(0,0,0,0.6)), url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
