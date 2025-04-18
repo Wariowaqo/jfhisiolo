@@ -15,19 +15,19 @@ const Footer: React.FC = () => {
             <p>Empowering Lives, Inspiring Change</p>
             
             <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <Facebook className="hover:text-primary transition-colors" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              </a> */}
+              <a href="https://x.com/jfhcbo?s=21" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <Twitter className="hover:text-primary transition-colors" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/journeyforhopewalk?igsh=aGkwYWYxN2JkZGt2&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="hover:text-primary transition-colors" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="hover:text-primary transition-colors" />
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              </a> */}
+              <a href="https://www.tiktok.com/@journeyforhopeisiolo?_t=ZM-8vN6J2XmKr1&_r=1" target="_blank" rel="noopener noreferrer" aria-label="Tiktok">
                 <Youtube className="hover:text-primary transition-colors" />
               </a>
             </div>
