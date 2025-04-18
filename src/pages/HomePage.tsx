@@ -28,12 +28,13 @@ const HomePage: React.FC = () => {
     <div className="page-container">
       <Navigation />
       
-      <section 
-  className="hero-section h-screen pt-16 relative flex items-center justify-center"
+      <section
+  className="relative h-screen flex items-center justify-center pt-20"
   style={{
-    backgroundImage: `url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
+    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.1)), url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center'
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
   }}
       >
         <div className="hero-content text-center text-white z-10">
