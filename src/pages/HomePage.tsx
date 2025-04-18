@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
           <p className="hero-subtitle text-xl mb-8">Promoting health and unity through awareness walks and outreach in Isiolo.</p>
           <div className="hero-buttons space-x-4">
             <Link to="/contact" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90">Volunteer</Link>
-            <Link to="/projects" className="inline-block px-6 py-3 bg-secondary text-white rounded-lg hover:bg-primary/90">Read Success Projects</Link>
+            <Link to="/projects" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90">Read Success Projects</Link>
           </div>
         </div>
       </section>
