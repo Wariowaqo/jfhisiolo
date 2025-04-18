@@ -29,13 +29,13 @@ const HomePage: React.FC = () => {
       <Navigation />
       
       <section 
-        className="hero-section h-screen relative flex items-center justify-center"
-        style={{
-          backgroundImage: `url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center'
-        }}
+  className="hero-section h-screen pt-16 relative flex items-center justify-center"
+  style={{
+    backgroundImage: `url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center'
+  }}
       >
         <div className="hero-content text-center text-white z-10">
           <h1 className="hero-title text-5xl font-bold mb-4">Empowering Lives, Inspiring Change</h1>
