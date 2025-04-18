@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
       <section 
         className="hero-section h-screen relative flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png')`,
+          backgroundImage: `url('/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'fit'
         }}
