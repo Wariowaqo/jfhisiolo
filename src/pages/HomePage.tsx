@@ -33,7 +33,6 @@ const HomePage: React.FC = () => {
   style={{
     backgroundImage: `url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
     backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   }}
       >
