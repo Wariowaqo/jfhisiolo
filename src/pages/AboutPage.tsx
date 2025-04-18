@@ -1,9 +1,11 @@
+
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import useFadeIn from '../hooks/useFadeIn';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const AboutPage: React.FC = () => {
   useFadeIn();
@@ -11,33 +13,39 @@ const AboutPage: React.FC = () => {
     name: string;
     role: string;
     statement: string;
+    image?: string;
   } | null>(null);
   
   const teamMembers = [
     {
-      name: "Guyo Fugicha",
-      role: "Co-Founder",
-      statement: "At Journey for Hope (JFH), we prioritize health and well-being by promoting physical activity through community walks and raising awareness on important health issues. Founded with a vision to empower marginalized communities, especially youth and people with disabilities, we also provide access to education, digital skills and economic opportunities. Our mission is to create an inclusive, informed and healthier society where everyone has the chance to thrive."
-    },
-    {
       name: "Tadicha Roba",
       role: "Founder",
+      image: "/lovable-uploads/efe2658c-fdf1-40ff-a0e6-5dc6d9de87b0.png",
       statement: "With a passion for creating lasting social change, this co-founder brings a wealth of experience in grassroots development and community engagement. Their focus is on creating innovative solutions that address the unique challenges faced by marginalized groups, particularly in education and health. Through their leadership, Journey for Hope has been able to reach diverse communities, providing them with the resources and support needed to overcome barriers and lead healthier, more empowered lives."
     },
     {
-      name: "Abduba Galgalo",
+      name: "Guyo Fugicha",
       role: "Co-Founder",
-      statement: "As a co-founder of Journey for Hope, our team member plays a crucial role in shaping the organization's mission and vision. With a strong commitment to social inclusion and community empowerment, they are dedicated to improving the lives of marginalized communities. Focused on education, health and economic development, they work tirelessly to create opportunities for youth and individuals with disabilities, driving sustainable solutions and fostering positive change. Their leadership continues to inspire hope and transformation in every journey."
+      image: "/lovable-uploads/d57dbb59-2382-471d-923d-802683a6d1d7.png",
+      statement: "At Journey for Hope (JFH), we prioritize health and well-being by promoting physical activity through community walks and raising awareness on important health issues. Founded with a vision to empower marginalized communities, especially youth and people with disabilities, we also provide access to education, digital skills and economic opportunities. Our mission is to create an inclusive, informed and healthier society where everyone has the chance to thrive."
     },
     {
       name: "Shamsa Shurie",
       role: "Project Coordinator",
+      image: "/lovable-uploads/1a670e6b-bb2c-449e-970f-978176a20181.png",
       statement: "Journey for Hope (JFH) is a community-driven initiative promoting health, awareness and sustainable development. As Project Coordinator, I oversee programs that empower youth, support climate action, and inspire positive change through local engagement."
     },
     {
       name: "Kristine Miano",
       role: "Co-Founder",
+      image: "/lovable-uploads/b70446b6-dc20-4680-b8d9-f9c9aa9514b3.png",
       statement: "At Journey for Hope (JFH), we believe every step tells a story — of healing, strength and transformation. As the Marketing Director, I'm proud to champion a movement that turns simple walks into powerful platforms for change. JFH brings people together through health walks, awareness campaigns, and community-driven projects that uplift youth, women, and underserved groups. Our work is rooted in purpose, powered by people and guided by Hope."
+    },
+    {
+      name: "Abduba Galgalo",
+      role: "Co-Founder",
+      image: "/lovable-uploads/616452f9-c80f-4ee1-8175-907e38d86a26.png",
+      statement: "As a co-founder of Journey for Hope, our team member plays a crucial role in shaping the organization's mission and vision. With a strong commitment to social inclusion and community empowerment, they are dedicated to improving the lives of marginalized communities. Focused on education, health and economic development, they work tirelessly to create opportunities for youth and individuals with disabilities, driving sustainable solutions and fostering positive change. Their leadership continues to inspire hope and transformation in every journey."
     }
   ];
   
@@ -94,33 +102,45 @@ const AboutPage: React.FC = () => {
           <h2 className="fade-in text-3xl font-bold mb-10 text-center">Our People</h2>
           <div className="people-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="team-member fade-in bg-white p-6 rounded-lg shadow-md">
-                <div className="member-image w-32 h-32 mx-auto rounded-full bg-gray-200 mb-4">
-                  {/* TODO: Add team member photos */}
+              <div key={index} className="team-member fade-in bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="member-image w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                  <Avatar className="w-full h-full">
+                    <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                    <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                  </Avatar>
                 </div>
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-primary font-medium">{member.role}</p>
+                <h3 className="text-xl font-bold text-center">{member.name}</h3>
+                <p className="text-primary font-medium text-center">{member.role}</p>
                 <p className="mt-2 text-gray-600 line-clamp-3">{member.statement}</p>
-                <Button 
-                  variant="outline" 
-                  className="mt-4"
-                  onClick={() => setSelectedPerson(member)}
-                >
-                  Read More
-                </Button>
+                <div className="text-center mt-4">
+                  <Button 
+                    variant="outline" 
+                    onClick={() => setSelectedPerson(member)}
+                  >
+                    Read More
+                  </Button>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
         <Dialog open={!!selectedPerson} onOpenChange={(open) => !open && setSelectedPerson(null)}>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="sm:max-w-[600px]">
             <DialogHeader>
-              <DialogTitle>{selectedPerson?.name}</DialogTitle>
-              <DialogDescription className="text-primary font-medium">{selectedPerson?.role}</DialogDescription>
+              {selectedPerson?.image && (
+                <div className="w-24 h-24 mx-auto mb-4">
+                  <Avatar className="w-full h-full">
+                    <AvatarImage src={selectedPerson.image} alt={selectedPerson.name} className="object-cover" />
+                    <AvatarFallback>{selectedPerson.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                  </Avatar>
+                </div>
+              )}
+              <DialogTitle className="text-center">{selectedPerson?.name}</DialogTitle>
+              <DialogDescription className="text-primary font-medium text-center">{selectedPerson?.role}</DialogDescription>
             </DialogHeader>
             <div className="mt-4">
-              <p>{selectedPerson?.statement}</p>
+              <p className="text-gray-700 leading-relaxed">{selectedPerson?.statement}</p>
             </div>
           </DialogContent>
         </Dialog>
