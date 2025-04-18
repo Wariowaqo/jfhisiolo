@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
         style={{
           backgroundImage: `url('/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'fit'
+          backgroundPosition: 'center'
         }}
       >
         <div className="hero-content text-center text-white z-10">
