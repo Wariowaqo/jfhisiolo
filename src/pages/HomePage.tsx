@@ -32,7 +32,8 @@ const HomePage: React.FC = () => {
         className="hero-section h-screen relative flex items-center justify-center"
         style={{
           backgroundImage: `url('/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png')`,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center'
         }}
       >
