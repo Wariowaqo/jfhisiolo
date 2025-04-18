@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <div className="page-container">
       <Navigation />
       
       <section 
