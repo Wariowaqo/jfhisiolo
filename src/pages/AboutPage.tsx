@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -46,23 +45,25 @@ const AboutPage: React.FC = () => {
     <div className="page-container">
       <Navigation />
       
-      {/* Main About Section */}
-      <section className="about-main">
-        <div className="container">
-          <h1 className="fade-in">About Journey for Hope Isiolo</h1>
+      <section className="about-main pt-24">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold text-center mb-12 fade-in">About Journey for Hope Isiolo</h1>
           
-          <div className="about-content flex flex-col md:flex-row gap-8 mt-8">
-            <div className="about-image fade-in w-full md:w-1/2">
-              {/* Insert a photo from the provided photos beside the mission and vision */}
+          <div className="about-content grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div className="about-image space-y-4 fade-in">
               <img 
-                src="/placeholder.svg" 
-                alt="Journey for Hope Isiolo Community" 
-                className="rounded-lg shadow-md w-full h-auto object-cover"
+                src="/lovable-uploads/ff8111eb-1040-41c6-87e8-4fd7080a3b98.png"
+                alt="Community walk participants" 
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
-              {/* TODO: Replace placeholder.svg with one of the actual images from the knowledge base */}
+              <img 
+                src="/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png"
+                alt="Journey for Hope activities" 
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
             
-            <div className="about-text fade-in w-full md:w-1/2">
+            <div className="about-text fade-in space-y-8">
               <h2>Our Mission</h2>
               <p className="mb-4">
                 To inspire and mobilize individuals and communities through purposeful walks, 
@@ -88,7 +89,6 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
       
-      {/* Our People Section */}
       <section className="our-people-section bg-secondary/20 py-16">
         <div className="container">
           <h2 className="fade-in text-3xl font-bold mb-10 text-center">Our People</h2>
@@ -126,7 +126,6 @@ const AboutPage: React.FC = () => {
         </Dialog>
       </section>
       
-      {/* Timeline Section */}
       <section className="timeline-section py-16">
         <div className="container">
           <h2 className="fade-in text-3xl font-bold mb-10 text-center">Our Journey</h2>

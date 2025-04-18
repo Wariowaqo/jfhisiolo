@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -14,7 +13,7 @@ const ProjectsPage: React.FC = () => {
       
       <section className="projects-section py-16 mt-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-12 fade-in">Success Projects</h1>
+          <h1 className="text-4xl font-bold text-center mb-12 fade-in">Our Impact Projects</h1>
           
           <div className="space-y-12 max-w-4xl mx-auto">
             <Card className="fade-in overflow-hidden">
@@ -23,9 +22,17 @@ const ProjectsPage: React.FC = () => {
                 <CardDescription>February 6, 2025 - International Day of Zero Tolerance for FGM</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
-                <div className="h-64 bg-gray-200 rounded-md overflow-hidden">
-                  {/* TODO: Add project image here - recommended size 1200x600px */}
-                  <img src="/placeholder.svg" alt="Anti-FGM Walk" className="w-full h-full object-cover" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <img 
+                    src="/lovable-uploads/4596201c-fc91-4a47-ad7f-037ddf9a7f49.png" 
+                    alt="Sanitary pads donation" 
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                  <img 
+                    src="/lovable-uploads/207fe7ae-82cc-4380-86bd-8d12f250332a.png" 
+                    alt="Community walk participants" 
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
                 </div>
                 <div className="space-y-4">
                   <p className="text-lg">
@@ -58,9 +65,17 @@ const ProjectsPage: React.FC = () => {
                 <CardDescription>March 2025 - Building Partnerships to End FGM</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
-                <div className="h-64 bg-gray-200 rounded-md overflow-hidden">
-                  {/* TODO: Add project image here - recommended size 1200x600px */}
-                  <img src="/placeholder.svg" alt="Anti-FGM Dinner Event" className="w-full h-full object-cover" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <img 
+                    src="/lovable-uploads/c6df90b1-d1d4-453d-a8dd-effc0615a991.png" 
+                    alt="Community exercises during walk" 
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                  <img 
+                    src="/lovable-uploads/ed18f212-3df2-4407-8e12-e678fb4c6ad4.png" 
+                    alt="Participants stretching" 
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
                 </div>
                 <div className="space-y-4">
                   <p className="text-lg">
@@ -93,9 +108,17 @@ const ProjectsPage: React.FC = () => {
                 <CardDescription>April 2025 - Technology Access Initiative</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
-                <div className="h-64 bg-gray-200 rounded-md overflow-hidden">
-                  {/* TODO: Add project image here - recommended size 1200x600px */}
-                  <img src="/placeholder.svg" alt="Digital Inclusion Project" className="w-full h-full object-cover" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <img 
+                    src="/lovable-uploads/a362addb-dc1d-468d-9e1f-fdf2e5af196f.png" 
+                    alt="Digital skills training session" 
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                  <img 
+                    src="/lovable-uploads/2f89871e-d5c1-46a8-b008-d4ab713743af.png" 
+                    alt="Teacher training session" 
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
                 </div>
                 <div className="space-y-4">
                   <p className="text-lg">
