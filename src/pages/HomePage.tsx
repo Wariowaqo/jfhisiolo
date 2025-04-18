@@ -60,19 +60,19 @@ const HomePage: React.FC = () => {
         <div className="container">
           <h2 className="fade-in">Our Impact</h2>
           <div className="impact-cards">
-            <Link to="/about" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
+            <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
               <h3>Sarah's Story</h3>
               <p>"Journey for Hope changed my perspective on community support. The walks not only improved my physical health but connected me with incredible people."</p>
             </Link>
             
-            <Link to="/about" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
+            <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
               <h3>Community Outreach</h3>
               <p>"Our neighborhood has transformed since the program began. We've seen increased engagement and healthier lifestyles across all age groups."</p>
             </Link>
             
-            <Link to="/about" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
+            <Link to="/projects" className="impact-card fade-in hover:transform hover:scale-105 transition-transform">
               <div className="card-image"></div>
               <h3>Building Bridges</h3>
               <p>"The initiative has created meaningful connections between different communities that otherwise might never have interacted."</p>
