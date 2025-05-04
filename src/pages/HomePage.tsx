@@ -40,9 +40,13 @@ const HomePage: React.FC = () => {
         <div className="hero-content text-center text-white z-10">
           <h1 className="hero-title text-5xl text-primary font-bold mb-4">Empowering Lives, Inspiring Change</h1>
           <p className="hero-subtitle text-xl mb-8">Promoting health and unity through awareness walks and outreach in Isiolo.</p>
-          <div className="hero-buttons space-x-4">
-            <Link to="/contact" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90">Volunteer</Link>
-            <Link to="/projects" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90">Success Projects</Link>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link to="/contact" className="px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-primary/90 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center font-medium">
+              Volunteer With Us
+            </Link>
+            <Link to="/projects" className="px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg shadow-lg hover:bg-primary/10 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center font-medium">
+              Our Success Projects
+            </Link>
           </div>
         </div>
       </section>
@@ -90,7 +94,7 @@ const HomePage: React.FC = () => {
             
             <Link to="/projects" className="impact-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
               <img 
-                src="/lovable-uploads/e744e3b8-6930-4922-923d-98edc5825a96.png" 
+                src="/lovable-uploads/f15f7109-b7bd-4738-bd28-26b8f7ae6f67.png" 
                 alt="Anti-FGM Dinner" 
                 className="w-full h-48 object-cover"
               />

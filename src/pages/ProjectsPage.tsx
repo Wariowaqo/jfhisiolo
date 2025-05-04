@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -59,8 +60,8 @@ const ProjectsPage: React.FC = () => {
               </CardHeader>
               <CardContent className="space-y-6 pt-6">
                 <img 
-                  src="/lovable-uploads/ec8f756b-2763-4e35-8b35-4f5a84278569.png" 
-                  alt="Community event" 
+                  src="/lovable-uploads/f15f7109-b7bd-4738-bd28-26b8f7ae6f67.png" 
+                  alt="Anti-FGM Dinner event" 
                   className="w-full h-80 object-cover rounded-lg"
                 />
                 <div className="space-y-4">

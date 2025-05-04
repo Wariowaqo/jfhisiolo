@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -42,14 +43,7 @@ const ContactPage: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // Save to Supabase
-      const { error: dbError } = await supabase
-        .from('contact_messages')
-        .insert([formData]);
-
-      if (dbError) throw dbError;
-
-      // Send email notification
+      // Send email notification only
       const { error: emailError } = await supabase.functions.invoke('send-contact-notification', {
         body: formData
       });
